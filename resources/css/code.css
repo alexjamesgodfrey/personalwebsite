@@ -43,18 +43,14 @@ body {
 
 /*HEADER*/
 header {
-  background-color: trans
 }
+
 header ul {
-  position: fixed;
-  width: 85%;
   margin: 50px auto;
-  z-index: 10;
   text-align: center;
 }
 
 header li{
-  position: relative;
   font-size: 23px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -66,55 +62,5 @@ header li{
 }
 
 li:hover{
-  color: rgb(255, 230, 168);
-}
-
-.block {
-  box-sizing: border-box;
-  background-color: white;
-  opacity: 0.03;
-  border-radius: 7%;
-  color: white;
-  width: 33%;
-  height: 300px;
-  display: inline-block;
-}
-
-.spotify-website iframe{
-  border: none;
-  width: 465;
-  height: 110;
-  display: block;
-  margin: 0 auto;
-}
-
-/*FOOTER*/
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-  margin: 15px auto;
-  text-align: center;
-}
-
-footer p {
-  font-size: 20px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  color: white;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-footer a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-footer a:hover {
   color: rgb(255, 230, 168);
 }
