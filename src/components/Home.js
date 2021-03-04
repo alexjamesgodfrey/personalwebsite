@@ -5,12 +5,22 @@ import Button from 'react-bootstrap/Button'
 import '../styles/Home.scss';
 
 const Home = () => {
+    const showButtons = () => {
+        document.getElementById('start').style.display = 'none';
+        document.getElementsByClassName('btn-container')[0].style.display = 'flex';
+    }
+
     return (
         <div className="home">
             <ReactParticles className="particles" params={particlesConfig} />
             <div className="main-container">
                 <h1>alexgodfrey.com</h1>
-                <Button id="btn" variant="outline-light" size="lg">coming soon</Button>
+                <Button id="start" variant="outline-light" size="lg" onClick={() => showButtons()}>go</Button>
+                <div className="btn-container">
+                    <Button id="btn" variant="outline-light" size="lg">projects</Button>
+                    <Button id="btn" variant="outline-light" size="lg">about</Button>
+                </div>
+                
             </div>
         </div>
     )
