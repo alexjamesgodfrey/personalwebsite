@@ -1,21 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactParticles from 'react-particles-js';
 import particlesConfig from './particles-config.js';
 import Button from 'react-bootstrap/Button'
 import '../styles/Home.scss';
 
 const Home = () => {
-    const showButtons = () => {
-        document.getElementById('start').style.display = 'none';
-        document.getElementsByClassName('btn-container')[0].style.display = 'flex';
-    }
+    const [show, setShow] = useState(false);
 
     return (
         <div className="home">
             <ReactParticles className="particles" params={particlesConfig} />
             <div className="main-container">
                 <h1>alexgodfrey.com</h1>
-                <Button id="start" variant="outline-light" size="lg" onClick={() => showButtons()}>go</Button>
+                <Button id="start" variant="outline-light" size="lg" onClick={() => setShow(!show)}>go</Button>
+                {show === true ? 
                 <div className="btn-container">
                     <Button id="btn" variant="outline-light" size="lg">projects</Button>
                     <div className="mind-map">
@@ -25,7 +23,9 @@ const Home = () => {
                     </div>
                     <Button id="btn" variant="outline-light" size="lg">about</Button>
                 </div>
-                
+                :
+                <span></span>
+                }
             </div>
         </div>
     )
