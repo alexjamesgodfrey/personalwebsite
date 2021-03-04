@@ -18,6 +18,11 @@ const Home = () => {
                 <Button id="start" variant="outline-light" size="lg" onClick={() => showButtons()}>go</Button>
                 <div className="btn-container">
                     <Button id="btn" variant="outline-light" size="lg">projects</Button>
+                    <div className="mind-map">
+                        <div id="rec"></div>
+                        <div id="circle"></div>
+                        <div id="rec"></div>
+                    </div>
                     <Button id="btn" variant="outline-light" size="lg">about</Button>
                 </div>
                 
