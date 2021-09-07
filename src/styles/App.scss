@@ -1,11 +1,12 @@
 //import Noto Sans sans-seriff font
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat&display=swap');
 //import react-bootstrap
 @import "~bootstrap/scss/bootstrap";
 
 * {
   margin: 0px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
