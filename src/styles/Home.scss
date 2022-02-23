@@ -1,7 +1,7 @@
 @import "./App.scss";
 
 .main-container {
-  background-color: #343a40;
+  background-color: white;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -17,8 +17,32 @@
 
 h1 {
   text-align: center;
-  color: white;
-  font-size: calc(max(4vw, 45px));
+  color: black;
+  font-size: calc(max(6vw, 55px)) !important;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+h3 {
+  text-align: center;
+  color: black;
+  font-size: calc(max(4vw, 45px)) !important;
+  font-weight: 500 !important;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+h4 {
+  text-align: center;
+  color: black;
+  font-size: calc(max(3vw, 35px)) !important;
+  font-weight: 500 !important;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
@@ -33,7 +57,8 @@ h1 {
 
 .item-1 {
   cursor: pointer;
-  color: white;
+  color: black;
+  line-height: 0.9;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
@@ -42,8 +67,9 @@ h1 {
 }
 
 .item-2 {
+  margin-top: 33px;
   cursor: pointer;
-  color: white;
+  color: black;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -52,7 +78,7 @@ h1 {
 }
 
 .item-3 {
-  color: white;
+  color: black;
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 4s; /* Firefox < 16 */
         -ms-animation: fadein 4s; /* Internet Explorer */
@@ -61,7 +87,7 @@ h1 {
 }
 
 .item-4 {
-  color: white;
+  color: black;
   -webkit-animation: fadein 4.5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 4.5s; /* Firefox < 16 */
         -ms-animation: fadein 4.5s; /* Internet Explorer */
@@ -70,7 +96,7 @@ h1 {
 }
 
 .item-5 {
-  color: white;
+  color: black;
   -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 5s; /* Firefox < 16 */
         -ms-animation: fadein 5s; /* Internet Explorer */
